@@ -1,0 +1,17 @@
+{
+  "name": "Spark Roster Search",
+  "version": "1.0",
+  "description": "The Spark Roster Search allows you to filter through your rosters to quickly find someone to mark attended.",
+  "manifest_version": 2,
+  "icons": {
+    "128": "128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://app.sparkmembership.com/Attendance_Rosters_Add_Attendance.aspx"
+      ],
+      "js": ["content.js"]
+    }
+  ]
+}
