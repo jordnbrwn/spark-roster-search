@@ -22,8 +22,7 @@ text.addEventListener("keyup", (e) => {
   let searchText = document.querySelector(".search-text").value;
   for (let x = 0; x < students.length; x++) {
     let nameElement = students[x].querySelector("td h3");
-    let name = nameElement.innerHTML;
-    let nameLower = name.toLowerCase();
+    let nameLower = nameElement.innerHTML.toLowerCase();
     let namesHidden = 0;
     if (nameLower.search(searchText.toLowerCase()) === -1) {
       students[x].style.display = "none";
